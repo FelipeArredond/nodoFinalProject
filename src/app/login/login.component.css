@@ -1,0 +1,30 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+div img{
+    width: 85px;
+}
+
+div form {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div form input{
+    width: 100%;
+}
