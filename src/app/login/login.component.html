@@ -1,10 +1,10 @@
 <div>
     <img src="https://via.placeholder.com/85x44" alt="log-icon">
-    <form action="submit">
+    <form action="submit" (submit)="login($event)">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" (change)="handleLogin($event)">
+        <input type="text" name="username" id="username" (change)="handleUsername($event)"/>
         <label for="password">Password</label>
-        <input type="password"  name="password" id="password"/>
+        <input type="password"  name="password" id="password" (change)="handlePassword($event)"/>
         <button type="submit">Log In</button>
     </form>
 </div>

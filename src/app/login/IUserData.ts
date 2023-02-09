@@ -1,5 +1,5 @@
 export interface IUserData {
-    username: "",
-    password: "",
-    isLogged: false
+    username: string,
+    password: string,
+    isLogged: boolean
   }
