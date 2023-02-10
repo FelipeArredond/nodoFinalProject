@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -8,4 +9,11 @@ import { Component, Input } from '@angular/core';
 export class NavComponent {
   @Input() username = "";
   @Input() isLogged = false;
+
+  constructor(private router: Router){}
+
+  navigate(path: string){
+    this.router.navigate(['/', path])
+  }
+
 }
