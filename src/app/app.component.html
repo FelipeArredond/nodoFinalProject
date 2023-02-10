@@ -1,5 +1,6 @@
-<app-nav/>
+<app-nav [username]="userData.username" [isLogged]="userData.isLogged" />
 <div class="container">
-    <app-login (log)="handleLogin($event)"/>
+    <router-outlet/>
+    <!-- <app-login (log)="handleLogin($event)"/> -->
 </div>
 <app-footer/>

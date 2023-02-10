@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { UserDataServiceService } from '../user-data-service.service';
 import { IUserData } from './IUserData';
 
 @Component({
@@ -7,7 +8,8 @@ import { IUserData } from './IUserData';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  @Output() log: EventEmitter<IUserData> = new EventEmitter();
+
+  constructor(private userDataService: UserDataServiceService){}
 
   userData: IUserData = {
     username: "",
@@ -27,7 +29,7 @@ export class LoginComponent {
     $event.preventDefault();
     if(this.userData.username == "admin" && this.userData.password == "admin"){
       this.userData.isLogged = true;
-      this.log.emit(this.userData);
+      this.userDataService.giveUserData.emit(this.userData);
     }else{
       alert("Wrong username or password!")
     }
