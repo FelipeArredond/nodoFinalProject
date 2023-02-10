@@ -1,0 +1,168 @@
+.conteinerdiv {
+    margin: 0.5%;
+    /* border: 2px solid #12f725;*/
+    padding: 1rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-text {
+    /*border: 2px solid #000000;*/
+    width: 35%;
+    height: 60%;
+    margin: 1em;
+    padding: 05em;
+    display: inline-block;
+}
+
+.cont-img1 {
+    /*border: 2px solid #df1d1d;*/
+    margin: 0.5em;
+    width: 65%;
+    height: 60%;
+    padding: 0.5em;
+    display: block;
+}
+
+.yogaimg {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    display: block;
+}
+
+.class-img {
+    width: 100%;
+    height: 100%;
+}
+
+.div1 h1 {
+    font-weight: 800;
+    font-family: Helvetica, sans-serif;
+    font-size: 72px;
+
+}
+
+.divtext .text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+
+/*Segundo div */
+
+.conteinerdiv2 {
+
+    margin: 0.5%;
+    /*border: 2px solid #12f725;*/
+    padding: 1rem;
+    background-color: rgba(181, 227, 243, 0.37);
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-text2 {
+    /* border: 2px solid #000000;*/
+    width: 35%;
+    height: 60%;
+    margin: 5em;
+    margin-left: -0.3%;
+    padding: 5em;
+    display: inline-block;
+    margin-right: 2.5%;
+
+}
+
+.divtext2 .text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.cont-img2 {
+    /*border: 2px solid #df1d1d;*/
+    margin: 1em;
+    width: 38%;
+    height: 70%;
+    display: block;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.class-img2 {
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.button {
+    color: #8C30F5;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    line-height: 24px;
+    Font-style: Medium;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/*****************venta del curso**********************/
+
+
+@media screen and (max-width:900px) {
+
+    /***div1*****/
+    .conteinerdiv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1 h1 {
+        font-weight: 800;
+        font-family: Helvetica, sans-serif;
+        font-size: 30px;
+
+    }
+
+    .cont-text {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-size: 13px;
+
+    }
+
+    .text {
+        text-align: justify;
+        align-items: center;
+    }
+
+    /*********div 2*****/
+    .conteinerdiv2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: justify;
+
+
+    }
+
+    .cont-img2 {
+        margin-top: 1em;
+    }
+
+    .cont-text2 {
+        margin-top: -15%;
+        font-size: 13px;
+    }
+
+
+}
