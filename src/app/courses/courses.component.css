@@ -6,6 +6,7 @@
 }
 
 .cursos__titulo {
+    margin-top: 10px;
     margin-bottom: 2rem;
     color: black;
     font-size: 60px;
@@ -35,7 +36,8 @@
     color: black;
     font-size: 35px;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 #text:hover {
@@ -47,7 +49,7 @@ a:link {
 }
 
 .gallery__img {
-    height: 355%;
+    height: 700%;
     object-fit: cover;
 }
 
