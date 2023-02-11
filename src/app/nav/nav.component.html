@@ -5,8 +5,11 @@
         <li><a href="#">Cursos</a></li>
         <li><a href="#">Freemium</a></li>
     </ul>
-    <ul class="user">
-        <li><button>Iniciar Sesion</button></li>
-        <li><button>Registro</button></li>
+    <ul class="user" *ngIf="!isLogged">
+        <li><button (click)="navigate('login')">Iniciar Sesion</button></li>
+        <li><button (click)="navigate('signup')">Registro</button></li>
     </ul>
-</div>
+    <ul class="user-logged" *ngIf="isLogged">
+        <li>Welcome {{username}}!</li>
+    </ul>
+</div> 
