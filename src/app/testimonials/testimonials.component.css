@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .testimonials {
     padding: 40px 0;
     background:#F4F5F7;
-    color: #434343;
+    color: black;
     text-align: center;
 }
 
@@ -82,23 +82,24 @@ img{
 
 h1{
     
-    font-family: 'Inter';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 48px;
     line-height: 64px;
-    color: #88898f;
-    
+    color: black;
+    text-decoration: underline #8C30F5;
 }
 
 h3{
-    
-font-family: 'Inter';
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 500;
 font-style: normal;
 }
 p{
-
-    font-family: 'Inter';
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
     color: #18191F;
+    font-size: 13px;
 }
