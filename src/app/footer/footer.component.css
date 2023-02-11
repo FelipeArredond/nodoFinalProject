@@ -48,6 +48,8 @@
     color: cornflowerblue;
     text-align: center;
     transition: all 300ms ease;
+    background-color: #1a1f36;
+
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: aqua;
