@@ -1,0 +1,125 @@
+.cursos {
+    text-align: center;
+    padding: 4rem;
+    margin-right: auto;
+
+}
+
+.cursos__titulo {
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.cursos__descripcion {
+    font-weight: 100;
+    font-size: 25px;
+    color: black;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+#text {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#text:hover {
+    color: rgb(212, 87, 129);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.gallery__img {
+    height: 355%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-columns: repeat(auto-fill,9em);
+}
+
+.gallery__item--2 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-template-columns: repeat(auto-fill,9em);
+}
+
+.gallery__item--3 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-columns: repeat(auto-fill,9em);
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-template-columns: repeat(auto-fill,9em);
+}
+
+.gallery__item--5 {
+    grid-column-start: 7;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-template-columns: repeat(auto-fill,9em);
+}
+
+
+/*ResponsiveMobile*/
+@media(max-width:768px) {
+    .cursos {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .cursos__descripcion {
+        font-size: 1.4rem;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;   
+    }
+
+    .gallery__img{
+        height: auto;
+        object-fit: cover;
+    }
+
+}
