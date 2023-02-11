@@ -6,7 +6,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { HomepageComponent } from './homepage/homepage.component';
+
 
 const routes: Routes = [
   {
