@@ -1,7 +1,9 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .cursos {
     text-align: center;
-    padding: 4rem;
-    margin-right: auto;
 
 }
 
@@ -9,16 +11,16 @@
     margin-top: 10px;
     margin-bottom: 2rem;
     color: black;
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Oswald', sans-serif;
 
 }
 
 .cursos__descripcion {
     font-weight: 100;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     margin-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -27,14 +29,14 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
-    margin-left: 100px;
-    margin-right: 150px;
+    grid-gap: 12px;
+    /* margin-left: 100px;
+    margin-right: 150px; */
 }
 
 #text {
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -49,7 +51,7 @@ a:link {
 }
 
 .gallery__img {
-    height: 700%;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -93,7 +95,6 @@ a:link {
     grid-template-columns: repeat(auto-fill,9em);
 }
 
-
 /*ResponsiveMobile*/
 @media(max-width:768px) {
     .cursos {
@@ -125,3 +126,4 @@ a:link {
     }
 
 }
+
