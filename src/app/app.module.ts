@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -15,6 +16,7 @@ import { CoursesComponent } from './courses/courses.component';
     AppComponent,
     FooterComponent,
     NavComponent,
+    TestimonialsComponent,
     LoginComponent,
     SignupComponent,
     HomepageComponent,
