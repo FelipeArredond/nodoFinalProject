@@ -5,6 +5,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { TemaryComponent } from './temary/temary.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'courses',
     component: CoursesComponent
+  },
+  {
+     path:'temary',
+     component: TemaryComponent
   },
   {
     path: '',
