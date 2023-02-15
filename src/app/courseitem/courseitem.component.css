@@ -1,0 +1,11 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.course_item{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
