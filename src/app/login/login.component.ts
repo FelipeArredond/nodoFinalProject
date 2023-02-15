@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UserDataServiceService } from '../user-data-service.service';
 import { IUserData } from './IUserData';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,12 +10,16 @@ import { IUserData } from './IUserData';
 })
 export class LoginComponent {
 
-  constructor(private userDataService: UserDataServiceService){}
+  constructor(private userDataService: UserDataServiceService, private router: Router){}
 
   userData: IUserData = {
     username: "",
     password: "",
     isLogged: false
+  }
+
+  navigate(path: string){
+    this.router.navigate(['/', path])
   }
 
   handleUsername($event: any){
@@ -30,7 +35,12 @@ export class LoginComponent {
     if(this.userData.username == "admin" && this.userData.password == "admin"){
       this.userData.isLogged = true;
       this.userDataService.giveUserData.emit(this.userData);
-    }else{
+      this.navigate('/');
+    }else if(this.userData.username == "root" && this.userData.password == "root"){
+      this.userData.isLogged = true;
+      this.userDataService.giveUserData.emit(this.userData);
+    }
+    else{
       alert("Wrong username or password!")
     }
   }

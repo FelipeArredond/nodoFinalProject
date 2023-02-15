@@ -1,9 +1,10 @@
 <div class="navbar">
-    <ul class="links">
+    <ul class="links"> 
         <li><img src="../../assets/logoppal.jpg" alt="navlogo" (click)="navigate('/')"></li>
-        <li><a routerLink="/">Inicio</a></li>
-        <li><a routerLink="/courses">Cursos</a></li>
-        <li><a href="#">Freemium</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/">Inicio</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/courses">Cursos</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/freemium">Freemium</a></li>
+        <li *ngIf="username == 'root'"><a routerLink="/adminpanel">Root user dashboard</a></li>
     </ul>
     <ul class="user" *ngIf="!isLogged">
         <li><button (click)="navigate('login')">Iniciar Sesion</button></li>

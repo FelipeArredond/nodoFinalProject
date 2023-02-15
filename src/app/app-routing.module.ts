@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
+import { FreemiumComponent } from './freemium/freemium.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -30,6 +32,14 @@ const routes: Routes = [
   {
      path:'temary',
      component: TemaryComponent
+  },
+  {
+    path: 'freemium',
+    component: FreemiumComponent
+  },
+  {
+    path: 'adminpanl',
+    component: AdminpanelComponent
   },
   {
     path: '',
