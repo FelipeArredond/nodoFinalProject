@@ -34,6 +34,7 @@ export class LoginComponent {
     $event.preventDefault();
     if(this.userData.username == "admin" && this.userData.password == "admin"){
       this.userData.isLogged = true;
+      this.userDataService.addUserData(this.userData);
       this.userDataService.giveUserData.emit(this.userData);
       this.navigate('/');
     }else if(this.userData.username == "root" && this.userData.password == "root"){

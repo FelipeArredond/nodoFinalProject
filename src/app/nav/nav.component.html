@@ -12,5 +12,6 @@
     </ul>
     <ul class="user-logged" *ngIf="isLogged">
         <li>Welcome {{username}}!</li>
+        <li (click)="exit()">Exit</li>
     </ul>
 </div> 
