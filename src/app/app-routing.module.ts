@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { TemaryComponent } from './temary/temary.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TargettcursosComponent } from './targettcursos/targettcursos.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 
 const routes: Routes = [
@@ -38,13 +40,24 @@ const routes: Routes = [
     component: FreemiumComponent
   },
   {
-    path: 'adminpanl',
+    path: 'adminpanel',
     component: AdminpanelComponent
   },
   {
     path: '',
     component: HomepageComponent
-  }
+  },
+
+  {
+    path: 'target',
+    component: TargettcursosComponent
+  },
+
+  {
+    path: 'subscription',
+    component: SubscriptionComponent
+  },
+
 ];
 
 @NgModule({

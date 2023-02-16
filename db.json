@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "username": "felipe",
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "username": "stefa",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "courses": [
+    {
+      "imageURL": "https://via.placeholder.com/80x80",
+      "tittle": "Mentalidad",
+      "desc": "Aprende a sentirte mejor!",
+      "hours": 8,
+      "users": [
+        "felipe",
+        "admin",
+        "",
+        "admin"
+      ],
+      "id": 1
+    },
+    {
+      "imageURL": "https://via.placeholder.com/80x80",
+      "tittle": "Calculo Integrak",
+      "desc": "Aprende a sentirte peor!",
+      "hours": 100,
+      "users": [
+        "felipe",
+        "admin"
+      ],
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    }
+  ]
+}

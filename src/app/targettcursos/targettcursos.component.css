@@ -1,0 +1,25 @@
+.preciosale{
+
+    color: red;
+    font-weight:600;
+
+}
+.buttonby{
+    color:#fffdfd;
+    background-color:#8C30F5;
+    border:1px solid transparent ;
+    font-size:1.0rem;
+    line-height:24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    cursor:pointer;
+    width:100%;
+    height:auto;
+    border-radius:5px;
+    transition:transform 0.3s ease ;/*Ease para que sea constante*/
+}
+.buttonby:hover{
+    box-shadow:2px 15px 5px 0px hsla(0, 0%, 3%, 0.562);
+    background-color:#6308cc;
+    color:white;
+}

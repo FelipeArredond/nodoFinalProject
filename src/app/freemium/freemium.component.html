@@ -1,4 +1,1 @@
-<app-courseitem/>
-<app-courseitem/>
-<app-courseitem/>
-<app-courseitem/>
+<app-courseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (inscribe)="validateInscribe(i.id, i.imageURL, i.tittle, i.desc, i.hours, i.users)"/>
