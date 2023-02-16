@@ -38,7 +38,7 @@ const routes: Routes = [
     component: FreemiumComponent
   },
   {
-    path: 'adminpanl',
+    path: 'adminpanel',
     component: AdminpanelComponent
   },
   {

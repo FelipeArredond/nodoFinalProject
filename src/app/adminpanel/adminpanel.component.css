@@ -1,0 +1,17 @@
+.admin-container{
+    width: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-container h1{
+    text-decoration: underline #8C30F5;
+}
+
+.admin-container h3{
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.admin-courses-container{
+    margin-top: 50px;
+}

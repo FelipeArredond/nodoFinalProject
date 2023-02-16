@@ -56,6 +56,7 @@ export class LoginComponent {
       ) {
         this.userData.isLogged = true;
         this.userDataService.giveUserData.emit(this.userData);
+        this.navigate('adminpanel')
       } else {
         console.log('error');
       }

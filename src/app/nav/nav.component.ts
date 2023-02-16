@@ -23,6 +23,7 @@ export class NavComponent {
       password: '',
       isLogged: false
     })
+    location.reload()
     this.navigate('')
   }
 

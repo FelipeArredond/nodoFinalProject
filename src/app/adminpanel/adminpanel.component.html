@@ -1,1 +1,9 @@
-<p>adminpanel works!</p>
+<div class="admin-container">
+    <h1>Bienvenido al Panel de administacion!</h1>
+    <h3>Aca podras ver las listas de usuarios inscritos, elminiar, modificar y añadir cursos!.</h3>
+
+    <div class="admin-courses-container">
+        <app-admincourseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (inscribe)="edit(i.id, i.imageURL, i.tittle, i.desc, i.hours, i.users)"/>
+    </div>
+
+</div>
