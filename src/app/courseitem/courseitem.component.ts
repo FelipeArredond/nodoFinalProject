@@ -7,7 +7,10 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./courseitem.component.css'],
 })
 export class CourseitemComponent {
-  @Input() courseTittle = '';
+  @Input() courseImageURL:string = '';
+  @Input() courseTittle: string = '';
+  @Input() courseDescription: string = '';
+  @Input() courseHours: number  = 0;
   @Output() inscribe: EventEmitter <any> = new EventEmitter(); 
 
   constructor() {}

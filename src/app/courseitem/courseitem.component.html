@@ -1,10 +1,10 @@
 <div class="course_item">
-    <img src="https://via.placeholder.com/80x80" alt="courseimage">
+    <img src={{courseImageURL}} alt="courseimage">
     <div>
-        <h3>Nombre del curso</h3>
-        <p>Breve descripcion</p>
+        <h3>{{courseTittle}}</h3>
+        <p>{{courseDescription}}</p>
     </div>
-    <p>6 Horas</p>
+    <p>{{courseHours}} Horas</p>
     <p>Contenido</p>
     <button type="submit" class="inscribe_button" (click)="onInscribe()">Inscribirme</button>
 </div>
