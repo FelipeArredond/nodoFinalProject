@@ -12,6 +12,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseitemComponent } from './courseitem/courseitem.component';
 import { TemaryComponent } from './temary/temary.component';
+import { TargettcursosComponent } from './targettcursos/targettcursos.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TemaryComponent } from './temary/temary.component';
     HomepageComponent,
     CoursesComponent,
     CourseitemComponent,
-    TemaryComponent
+    TemaryComponent,
+    TargettcursosComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,
