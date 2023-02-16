@@ -20,7 +20,7 @@ export class FreemiumComponent {
     if(this.userDataService.getUserData().isLogged){
       alert('Inscrito')
     }else{
-      alert('Inicia Sesion')
+      alert('Debes de Iniciar Sesion')
       this.navigate('login');
     }
   }

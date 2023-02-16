@@ -23,20 +23,19 @@ export class LoginComponent {
   }
 
   handleUsername($event: any){
-    this.userData.username = $event.target.value;
+    this.userData.username = $event.target.value;//SE LE DA AL USERNAME EL VALOR DEL INPUT
   }
 
   handlePassword($event: any){
-    this.userData.password = $event.target.value;
+    this.userData.password = $event.target.value;//SE LE DA AL PASSWORD EL VALOR DEL INPUT
   }
 
   login($event: any){
-    $event.preventDefault();
     if(this.userData.username == "admin" && this.userData.password == "admin"){
       this.userData.isLogged = true;
-      this.userDataService.addUserData(this.userData);
+      this.userDataService.addUserData(this.userData);//LE PASAMOS AL SERVICIO EL USUARIO LOGUEADO
       this.userDataService.giveUserData.emit(this.userData);
-      this.navigate('/');
+      this.navigate('/');//VAMOS AL INICIO
     }else if(this.userData.username == "root" && this.userData.password == "root"){
       this.userData.isLogged = true;
       this.userDataService.giveUserData.emit(this.userData);

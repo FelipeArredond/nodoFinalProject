@@ -23,6 +23,7 @@ export class NavComponent {
       password: '',
       isLogged: false
     })
+    this.navigate('')
   }
 
 }
