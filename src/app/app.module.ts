@@ -12,8 +12,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseitemComponent } from './courseitem/courseitem.component';
 import { TemaryComponent } from './temary/temary.component';
-import { TargettcursosComponent } from './targettcursos/targettcursos.component';
-import { SubscriptionComponent } from './subscription/subscription.component';
+import { FreemiumComponent } from './freemium/freemium.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { AdmincourseitemComponent } from './admincourseitem/admincourseitem.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,9 @@ import { SubscriptionComponent } from './subscription/subscription.component';
     CoursesComponent,
     CourseitemComponent,
     TemaryComponent,
-    TargettcursosComponent,
-    SubscriptionComponent
+    FreemiumComponent,
+    AdminpanelComponent,
+    AdmincourseitemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { IUserData } from './login/IUserData';
 import { UserDataServiceService } from './user-data-service.service';
 
@@ -7,7 +7,7 @@ import { UserDataServiceService } from './user-data-service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'finalproject';
   userData: IUserData = {
     username: "",

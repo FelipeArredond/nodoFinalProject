@@ -1,0 +1,61 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 330px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+div img{
+    width: 85px;
+}
+
+div form {
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div form input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 20px;
+    border: 2px solid #8C30F5;
+}
+
+div form input::content{
+    color: black;
+    padding: 2px;
+}
+
+div form button{
+    background-color: #8C30F5;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #F1E4FF;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div form button:hover{
+    background-color: #F1E4FF;
+    color: #8C30F5;
+}

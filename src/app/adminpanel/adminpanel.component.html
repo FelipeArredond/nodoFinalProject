@@ -1,0 +1,26 @@
+<div class="admin-container">
+    <h1>Bienvenido al Panel de administacion!</h1>
+    <h3>Aca podras ver las listas de usuarios inscritos, elminiar, modificar y añadir cursos!.</h3>
+    <div>
+        <button class="create-course-button">Crear Nuevo curso !</button>
+    </div>
+    <div class="form-container">
+        <img src="../../assets/logoppal.jpg" alt="log-icon">
+        <form action="submit" (submit)="createCourse(newCourseData.imageURL,newCourseData.tittle,newCourseData.desc,newCourseData.hours,[], $event)">
+            <label for="image">Añade la URL de la imagen</label>
+            <input type="text" placeholder="example" name="image" id="image" (change)="handleCourseImage($event)"/>
+            <label for="tittle">Escribe un titulo para este curso</label>
+            <input type="text"  placeholder="Example Tittle" name="tittle" id="tittle" (change)="handleCourseTittle($event)"/>
+            <label for="desc">Da una breve descripcion de tu curso</label>
+            <input type="text"  placeholder="Example Tittle" name="desc" id="desc" (change)="handleCourseDesc($event)"/>
+            <label for="hours">Da una cantidad de horas estimadas</label>
+            <input type="text"  placeholder="Example Tittle" name="hours" id (change)="handleCourseHours($event)"/>
+            <button type="submit">Crear curso!</button>
+        </form>
+    </div>
+    
+    <div class="admin-courses-container">
+        <app-admincourseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (inscribe)="edit(i.id, i.imageURL, i.tittle, i.desc, i.hours, i.users)"/>
+    </div>
+
+</div>
