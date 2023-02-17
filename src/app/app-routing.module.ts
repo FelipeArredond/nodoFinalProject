@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { TemaryComponent } from './temary/temary.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TargettcursosComponent } from './targettcursos/targettcursos.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
+import { EcomerceComponent } from './ecomerce/ecomerce.component';
 
 
 const routes: Routes = [
@@ -47,16 +48,19 @@ const routes: Routes = [
     path: '',
     component: HomepageComponent
   },
-
   {
     path: 'target',
     component: TargettcursosComponent
   },
-
   {
     path: 'subscription',
     component: SubscriptionComponent
   },
+  {
+    path: 'comercio',
+    component:EcomerceComponent
+  }
+  
 
 ];
 

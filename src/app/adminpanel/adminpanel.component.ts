@@ -63,7 +63,7 @@ export class AdminpanelComponent {
     await fetch('http://localhost:3000/courses', {
       method: 'POST',
       headers: {
-        'Contente-Type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         imageURL: this.newCourseData.imageURL,

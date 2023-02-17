@@ -1,0 +1,13 @@
+
+.ctn-todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
+}
+.container-ecomerce{
+    display: flex;
+    flex-direction: row;
+  
+    margin-left: 2px;
+}

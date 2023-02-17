@@ -15,6 +15,8 @@ import { TemaryComponent } from './temary/temary.component';
 import { FreemiumComponent } from './freemium/freemium.component';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { AdmincourseitemComponent } from './admincourseitem/admincourseitem.component';
+import { EcomerceComponent } from './ecomerce/ecomerce.component';
+import { TargettcursosComponent } from './targettcursos/targettcursos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AdmincourseitemComponent } from './admincourseitem/admincourseitem.comp
     TemaryComponent,
     FreemiumComponent,
     AdminpanelComponent,
-    AdmincourseitemComponent
+    AdmincourseitemComponent,
+    EcomerceComponent,
+    TargettcursosComponent
   ],
   imports: [
     BrowserModule,
