@@ -14,6 +14,11 @@
       "username": "stefa",
       "password": "1234",
       "id": 3
+    },
+    {
+      "username": "daniel",
+      "password": "admin",
+      "id": 4
     }
   ],
   "courses": [
@@ -26,7 +31,8 @@
         "felipe",
         "admin",
         "",
-        "admin"
+        "admin",
+        "daniel"
       ],
       "id": 1
     },
@@ -37,30 +43,18 @@
       "hours": 100,
       "users": [
         "felipe",
-        "admin"
+        "admin",
+        "daniel"
       ],
       "id": 2
     },
     {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
+      "imageURL": "https://via.placeholder.com/80x80",
+      "tittle": "Test desde form",
+      "desc": "dsc desde form",
+      "hours": 10,
+      "users": [],
+      "id": 17
     }
   ]
 }

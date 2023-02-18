@@ -60,18 +60,20 @@ export class AdminpanelComponent {
     $event: any
   ) {
     $event.preventDefault();
+    const bodyData = JSON.stringify({
+      imageURL: this.newCourseData.imageURL,
+      tittle: this.newCourseData.tittle,
+      desc: this.newCourseData.desc,
+      hours: 10,
+      users: [],
+    });
+    console.log(bodyData) 
     await fetch('http://localhost:3000/courses', {
       method: 'POST',
       headers: {
-        'Contente-Type': 'application/json',
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        imageURL: this.newCourseData.imageURL,
-        tittle: this.newCourseData.tittle,
-        desc: this.newCourseData.desc,
-        hours: this.newCourseData.hours,
-        users: [],
-      }),
+      body: bodyData,
     })
       .then((res) => res.json())
       .then((res) => console.log(res));
