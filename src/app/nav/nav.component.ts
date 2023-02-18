@@ -11,10 +11,16 @@ export class NavComponent {
   @Input() username = "";
   @Input() isLogged = false;
 
+  mobileMenuDisplay = false;
+
   constructor(private router: Router, private userDataService: UserDataServiceService){}
 
   navigate(path: string){
     this.router.navigate(['/', path])
+  }
+
+  handleMobile(){
+    this.mobileMenuDisplay = !this.mobileMenuDisplay;
   }
 
   exit(){
