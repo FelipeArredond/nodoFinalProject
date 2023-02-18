@@ -5,7 +5,7 @@
 .course_item{
     display: flex;
     align-items: center;
-    width: 1000px;
+    width: 800px;
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -27,4 +27,16 @@
 
 .inscribe_button:hover{
     translate: 2px -2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .course_item{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

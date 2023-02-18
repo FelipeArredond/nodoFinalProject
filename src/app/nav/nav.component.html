@@ -28,8 +28,8 @@
             <li><button (click)="navigate('login')">Iniciar Sesion</button></li>
             <li><button (click)="navigate('signup')">Registro</button></li>
         </ul>
-        <ul class="mobile-user-logged" *ngIf="isLogged">
-            <li>Welcome {{username}}!</li>
+        <ul class="user-logged" *ngIf="isLogged">
+            <li>Bienvnido {{username}}!</li>
             <li><button (click)="exit()">Salir</button></li>
         </ul>
     </div>

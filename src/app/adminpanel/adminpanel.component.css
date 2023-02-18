@@ -82,3 +82,12 @@ form input::content{
     background-color: #F1E4FF;
     color: #8C30F5;
 }
+
+@media only screen and (max-width: 600px) {
+    .admin-container{
+        width: 350px;
+    }
+    .form-container{
+        width: 350px;
+    }
+}
