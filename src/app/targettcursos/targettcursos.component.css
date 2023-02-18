@@ -1,3 +1,11 @@
+.card{
+
+    width:  20rem;
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
 .preciosale{
 
     color: red;
@@ -16,10 +24,11 @@
     width:100%;
     height:auto;
     border-radius:5px;
+    padding: 5px;
     transition:transform 0.3s ease ;/*Ease para que sea constante*/
 }
 .buttonby:hover{
-    box-shadow:2px 15px 5px 0px hsla(0, 0%, 3%, 0.562);
+    
     background-color:#6308cc;
     color:white;
 }

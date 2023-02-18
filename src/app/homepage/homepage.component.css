@@ -134,9 +134,9 @@
     .cont-text {
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         font-size: 13px;
-
+        padding: 2px;
     }
 
     .text {

@@ -1,55 +1,91 @@
-body {
-    margin: 0;
-  }
+
+.container {
+  background: rgb(226,123,245);
+  background: linear-gradient(0deg, rgba(226,123,245,1) 36%, rgba(218,138,232,1) 54%, rgba(171,137,235,1) 74%);
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  height: 20px;
+  margin-bottom: 5px;
+  height: auto;
+  width: 100%;
+}
+
+
+
+.ctn-fluid {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+ width: 100%;
+ height: auto;
+}
+.ctn-temary{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background-color: #E9ECEF;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.ctn-course {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+}
+.description{
   
+  margin: auto;
+   background-color: white;
+   font-family: 'Roboto', sans-serif;
+font-weight: 400;
+
+
+
+
+}
+h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: -8px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin: auto;
+}
+
+@media (max-width: 1500px) {
+
   .container {
-    background: rgb(255,222,225);
-    background: linear-gradient(90deg, rgba(255,222,225,1) 53%, rgba(209,186,204,1) 91%); 
-    text-align: center;
-    border-radius: 10px;
-    padding: 30px; 
-    height: 40px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
   }
-  
-  
+  .ctn-fluid{
+
+    width: 100%;
+    height: auto;
+  }
+   
   h1 {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: -8px;
+    font-size: 24px;
+    margin: 0 0 10px;
   }
-  
+  h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
   p {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
+    font-size: 20px;
+    margin: 10px 0;
   }
-  
-  @media (max-width: 1500px) {
-  
-    .container {
-      width: 90%; 
-      height: auto; 
-      padding: 20px; 
-    }
-    h1 {
-      font-size: 24px; 
-      margin: 0 0 10px;
-    }
-    p {
-      font-size: 20px; 
-      margin: 10px 0; 
-    }
-  }
-  /*------------------*/
-.ctn-todo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: red;
 }
-.container-ecomerce{
-    display: flex;
-    flex-direction: row;
-  
-    margin-left: 2px;
-}
+
+/*------------------*/
