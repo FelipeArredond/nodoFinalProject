@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ICourseItem } from '../freemium/ICourseItem';
 
 @Component({
@@ -17,10 +18,21 @@ export class AdminpanelComponent {
     users: [],
   };
 
+  constructor(private router: Router){}
+
+  navigate(path: string){
+    this.router.navigate(['/', path])
+  }
+
+
   async ngOnInit() {
     const res = await fetch('http://localhost:3000/courses');
     const data = await res.json();
     this.courses = data;
+  }
+
+  handleForm(){
+    this.isCourseFormOpen = !this.isCourseFormOpen;
   }
 
   handleCourseImage($event: any) {
@@ -67,7 +79,6 @@ export class AdminpanelComponent {
       hours: 10,
       users: [],
     });
-    console.log(bodyData) 
     await fetch('http://localhost:3000/courses', {
       method: 'POST',
       headers: {
@@ -77,5 +88,23 @@ export class AdminpanelComponent {
     })
       .then((res) => res.json())
       .then((res) => console.log(res));
+    alert('Se ha creado el curso correctamente')
+    const res = await fetch('http://localhost:3000/courses');
+    const data = await res.json();
+    this.courses = data;
+  }
+  async deleteCourse(id: number) {
+    await fetch(`http://localhost:3000/courses/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+    alert('Se ha eliminado el curso correctamente')
+    const res = await fetch('http://localhost:3000/courses');
+    const data = await res.json();
+    this.courses = data;
   }
 }

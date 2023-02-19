@@ -39,23 +39,11 @@
     },
     {
       "imageURL": "https://via.placeholder.com/80x80",
-      "tittle": "Calculo Integrak",
-      "desc": "Aprende a sentirte peor!",
-      "hours": 100,
-      "users": [
-        "felipe",
-        "admin",
-        "daniel"
-      ],
-      "id": 2
-    },
-    {
-      "imageURL": "https://via.placeholder.com/80x80",
-      "tittle": "Test desde form",
+      "tittle": "Pet Classifier",
       "desc": "dsc desde form",
       "hours": 10,
       "users": [],
-      "id": 17
+      "id": 2
     }
   ]
 }
