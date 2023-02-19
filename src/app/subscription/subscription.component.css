@@ -32,7 +32,27 @@ h2{
     justify-content: space-evenly;
     align-items: center;
 }
-
+.buttonby{
+    background-color:#8C30F5;
+    border:1px solid transparent ;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    cursor:pointer;
+    width:20%;
+    height:auto;
+    border-radius:5px;
+    padding: 15px;
+    transition:transform 0.3s ease ;/*Ease para que sea constante*/
+}
+.buttonby:hover{
+    
+    background-color:#6308cc;
+    color:white;
+}
+.buttonby a{
+    
+    color:white;
+}
 .price__element{
     background-color: #e5e5f7;
     text-align: center;
@@ -98,3 +118,17 @@ h2{
     
 }
 
+@media only screen and (max-width: 600px){ 
+    
+    .buttonby {
+    
+       width: auto;
+       text-align: center;
+       
+    }
+    .buttonby a{
+    
+        font-size: 15px;
+       margin: auto;
+    }
+}
