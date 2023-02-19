@@ -24,17 +24,10 @@
   "courses": [
     {
       "imageURL": "https://via.placeholder.com/80x80",
-      "tittle": "Mentalidad",
-      "desc": "Aprende a sentirte mejor!",
-      "hours": 8,
-      "users": [
-        "felipe",
-        "admin",
-        "",
-        "admin",
-        "daniel",
-        "admin"
-      ],
+      "tittle": "Pet Classifier2",
+      "desc": "Desc",
+      "hours": 10,
+      "users": [],
       "id": 1
     },
     {
