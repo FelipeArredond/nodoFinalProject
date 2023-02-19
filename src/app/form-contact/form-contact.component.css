@@ -1,0 +1,101 @@
+
+    
+
+.boton:hover {
+    box-shadow:2px 15px 5px 0px hsla(0, 0%, 3%, 0.562);
+    background-color: #9c5fe2;
+    color:white;
+}
+
+.body2 {
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    background-color:#e3ddeb;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 7px;
+    
+}
+
+h2 {
+    color: #8C30F5;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    padding: 10px;
+
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+   
+}
+
+#boton {
+    color: white;
+    background-color:#6308cc;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#boton:hover {
+    cursor:pointer;
+    background-color: #a475da;;
+    color:white;
+}
+
+@media (max-width:480px) {
+    form {
+        width: 100%;
+        
+    }
+
+}
+
+.boton2 {
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#6308cc;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 15px;
+    font: size 10px;
+    cursor:pointer;
+    display:inline-block;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin: auto;
+    float:right; 
+}
+
+
+
+.boton2:hover {
+    background-color: #a475da;
+    color:white ;
+}

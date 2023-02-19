@@ -57,7 +57,10 @@
     border-radius: 100%;
    
 }
+.testimonials p{
 
+    font-size: 20px;
+}
 .name {
     width: 95%;
     display: flex;
@@ -80,7 +83,7 @@ img{
     }
 }
 
-h1{
+h2{
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;

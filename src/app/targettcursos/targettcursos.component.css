@@ -1,0 +1,61 @@
+.card{
+
+    width:  80%;
+    margin:auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+   
+
+}
+.card-title{
+ text-align: center;
+}
+.list-group-item1{
+    list-style-type: none;
+    text-align: center;
+}
+.list-group-item2{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 5px;
+}
+iframe{
+    height: 30rem;
+}
+.preciosale{
+
+    color: red;
+    font-weight:600;
+
+}
+.buttonby{
+    color:#fffdfd;
+    background-color:#8C30F5;
+    border:1px solid transparent ;
+    font-size:1.0rem;
+    line-height:24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    cursor:pointer;
+    width:50%;
+    height:50px;
+    border-radius:5px;
+    padding: 5px;
+    transition:transform 0.3s ease ;/*Ease para que sea constante*/
+}
+.buttonby:hover{
+    
+    background-color:#6308cc;
+    color:white;
+}
+
+@media only screen and (max-width: 600px){ 
+    
+    .card{
+        width: 20rem
+    }
+    iframe{
+        height: auto;
+    }
+}

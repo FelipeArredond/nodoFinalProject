@@ -11,6 +11,15 @@ import { SignupComponent } from './signup/signup.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseitemComponent } from './courseitem/courseitem.component';
+import { TemaryComponent } from './temary/temary.component';
+import { FreemiumComponent } from './freemium/freemium.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
+import { AdmincourseitemComponent } from './admincourseitem/admincourseitem.component';
+import { EcomerceComponent } from './ecomerce/ecomerce.component';
+import { TargettcursosComponent } from './targettcursos/targettcursos.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { EditModalComponent } from './edit-modal/edit-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +31,16 @@ import { CourseitemComponent } from './courseitem/courseitem.component';
     SignupComponent,
     HomepageComponent,
     CoursesComponent,
-    CourseitemComponent
+    CourseitemComponent,
+    TemaryComponent,
+    FreemiumComponent,
+    AdminpanelComponent,
+    AdmincourseitemComponent,
+    EcomerceComponent,
+    TargettcursosComponent,
+    FormContactComponent,
+    SubscriptionComponent,
+    EditModalComponent
   ],
   imports: [
     BrowserModule,

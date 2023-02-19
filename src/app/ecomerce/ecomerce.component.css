@@ -1,0 +1,105 @@
+.container {
+
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  height: 20px;
+  margin-bottom: 10px;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(247, 217, 252, 1) 25%, rgba(245, 214, 250, 1) 54%, rgba(237, 207, 241, 1) 74%);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.title-ecomerce {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+
+
+}
+
+.ctn-fluid {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.ctn-temary {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 15px;
+
+
+}
+
+.ctn-course {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+}
+
+.description {
+
+  margin: auto;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
+}
+
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  margin: auto;
+}
+
+.container-suscriptons {
+
+  margin-top: 100px;
+}
+
+@media (max-width: 1500px) {
+
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .ctn-fluid {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .title-ecomerce {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+
+  p {
+    font-size: 17px;
+    margin: 10px;
+  }
+
+}
+
+/*------------------*/

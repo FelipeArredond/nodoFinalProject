@@ -41,7 +41,7 @@
 .div1 h1 {
     font-weight: 800;
     font-family: Helvetica, sans-serif;
-    font-size: 72px;
+    font-size: 62px;
 
 }
 
@@ -134,22 +134,22 @@
     .cont-text {
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         font-size: 13px;
-
-    }
+        padding: 2px;
+    } 
+   
 
     .text {
         text-align: justify;
         align-items: center;
     }
-
+ 
     /*********div 2*****/
     .conteinerdiv2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
         text-align: justify;
 
 
@@ -160,8 +160,11 @@
     }
 
     .cont-text2 {
-        margin-top: -15%;
+        
         font-size: 13px;
+        width: auto;
+        margin: 0;
+        padding: 0;
     }
 
 

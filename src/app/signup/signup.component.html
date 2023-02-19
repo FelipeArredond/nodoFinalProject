@@ -1,1 +1,12 @@
-<p>signup works!</p>
+<div>
+    <img src="../../assets/logoppal.jpg" alt="log-icon">
+    <form action="submit" (submit)="signup($event)">
+        <label for="username">Username</label>
+        <input type="text" placeholder="example" name="username" id="username" (change)="handleUsername($event)"/>
+        <label for="password">Password</label>
+        <input type="password"  placeholder="******" name="password" id="password" (change)="handlePassword($event)"/>
+        <label for="password-confirm">Confirm Password</label>
+        <input type="password"  placeholder="******" name="password-confirm" id="password-confirm" (change)="handleConfirmPassword($event)"/>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>

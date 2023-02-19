@@ -1,0 +1,27 @@
+<div class="admin-container">
+    <h1>Bienvenido al Panel de administacion!</h1>
+    <h3>Aca podras ver las listas de usuarios inscritos, elminiar, modificar y añadir cursos!.</h3>
+    <div>
+        <button class="create-course-button" (click)="handleForm()"><span *ngIf="!isCourseFormOpen">Crear curso!</span><span *ngIf="isCourseFormOpen">Cerrar!</span></button>
+    </div>
+    <app-edit-modal [isOpen]="isModalOpen" (refresh)="handleRefresh()"/>
+    <div class="form-container" *ngIf="isCourseFormOpen">
+        <img src="../../assets/logoppal.jpg" alt="log-icon">
+        <form action="submit" (submit)="createCourse(newCourseData.imageURL,newCourseData.tittle,newCourseData.desc,newCourseData.hours,[], $event)">
+            <label for="image">Añade la URL de la imagen</label>
+            <input type="text" placeholder="example" name="image" id="image" (change)="handleCourseImage($event)"/>
+            <label for="tittle">Escribe un titulo para este curso</label>
+            <input type="text"  placeholder="Example Tittle" name="tittle" id="tittle" (change)="handleCourseTittle($event)"/>
+            <label for="desc">Da una breve descripcion de tu curso</label>
+            <input type="text"  placeholder="Example Tittle" name="desc" id="desc" (change)="handleCourseDesc($event)"/>
+            <label for="hours">Da una cantidad de horas estimadas</label>
+            <input type="text"  placeholder="Example Tittle" name="hours" id (change)="handleCourseHours($event)"/>
+            <button type="submit">Crear curso!</button>
+        </form>
+    </div>
+    
+    <div class="admin-courses-container">
+        <app-admincourseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (edit)="edit()" (delete)="deleteCourse(i.id)"/>
+    </div>
+
+</div>

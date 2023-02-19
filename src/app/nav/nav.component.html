@@ -1,9 +1,10 @@
 <div class="navbar">
-    <ul class="links">
+    <ul class="links"> 
         <li><img src="../../assets/logoppal.jpg" alt="navlogo" (click)="navigate('/')"></li>
-        <li><a routerLink="/">Inicio</a></li>
-        <li><a routerLink="/courses">Cursos</a></li>
-        <li><a href="#">Freemium</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/">Inicio</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/courses">Cursos</a></li>
+        <li *ngIf="username != 'root'"><a routerLink="/freemium">Freemium</a></li>
+        <li *ngIf="username == 'root'"><a routerLink="/adminpanel">Root user dashboard</a></li>
     </ul>
     <ul class="user" *ngIf="!isLogged">
         <li><button (click)="navigate('login')">Iniciar Sesion</button></li>
@@ -11,5 +12,26 @@
     </ul>
     <ul class="user-logged" *ngIf="isLogged">
         <li>Welcome {{username}}!</li>
+        <li><button (click)="exit()">Salir</button></li>
     </ul>
+</div>
+<div class="mobile-nav">
+    <i class="fas fa-bars" (click)="handleMobile()"></i>
+    <div class="mobile-menu" *ngIf="mobileMenuDisplay">
+        <ul class="mobile-links"> 
+            <li *ngIf="username != 'root'"><a routerLink="/">Inicio</a></li>
+            <li *ngIf="username != 'root'"><a routerLink="/courses">Cursos</a></li>
+            <li *ngIf="username != 'root'"><a routerLink="/freemium">Freemium</a></li>
+            <li *ngIf="username == 'root'"><a routerLink="/adminpanel">Root user dashboard</a></li>
+        </ul>
+        <ul class="user" *ngIf="!isLogged">
+            <li><button (click)="navigate('login')">Iniciar Sesion</button></li>
+            <li><button (click)="navigate('signup')">Registro</button></li>
+        </ul>
+        <ul class="user-logged" *ngIf="isLogged">
+            <li>Bienvnido {{username}}!</li>
+            <li><button (click)="exit()">Salir</button></li>
+        </ul>
+    </div>
 </div> 
+
