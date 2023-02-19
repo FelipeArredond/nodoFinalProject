@@ -59,6 +59,11 @@ const routes: Routes = [
   {
     path: 'ecomerce',
     component:EcomerceComponent
+  },
+  {
+    path:'suscription',
+    component:SubscriptionComponent
+
   }
   
 

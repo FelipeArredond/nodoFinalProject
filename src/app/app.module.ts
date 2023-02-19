@@ -18,6 +18,7 @@ import { AdmincourseitemComponent } from './admincourseitem/admincourseitem.comp
 import { EcomerceComponent } from './ecomerce/ecomerce.component';
 import { TargettcursosComponent } from './targettcursos/targettcursos.component';
 import { FormContactComponent } from './form-contact/form-contact.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormContactComponent } from './form-contact/form-contact.component';
     AdmincourseitemComponent,
     EcomerceComponent,
     TargettcursosComponent,
-    FormContactComponent
+    FormContactComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,

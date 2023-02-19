@@ -137,13 +137,14 @@
         width: 100%;
         font-size: 13px;
         padding: 2px;
-    }
+    } 
+   
 
     .text {
         text-align: justify;
         align-items: center;
     }
-
+ 
     /*********div 2*****/
     .conteinerdiv2 {
         flex-direction: column;
@@ -160,8 +161,11 @@
     }
 
     .cont-text2 {
-        margin-top: -15%;
+        
         font-size: 13px;
+        width: auto;
+        margin: 0;
+        padding: 0;
     }
 
 
