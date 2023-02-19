@@ -41,7 +41,7 @@
 .div1 h1 {
     font-weight: 800;
     font-family: Helvetica, sans-serif;
-    font-size: 72px;
+    font-size: 62px;
 
 }
 
@@ -150,7 +150,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%;
         text-align: justify;
 
 

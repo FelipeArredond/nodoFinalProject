@@ -12,6 +12,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TargettcursosComponent } from './targettcursos/targettcursos.component';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { EcomerceComponent } from './ecomerce/ecomerce.component';
+import { FormContactComponent } from './form-contact/form-contact.component';
 
 
 const routes: Routes = [
@@ -61,8 +62,8 @@ const routes: Routes = [
     component:EcomerceComponent
   },
   {
-    path:'suscription',
-    component:SubscriptionComponent
+    path: 'formcontact',
+    component:FormContactComponent
 
   }
   
