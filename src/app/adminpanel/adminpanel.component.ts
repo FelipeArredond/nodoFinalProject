@@ -10,6 +10,7 @@ import { ICourseItem } from '../freemium/ICourseItem';
 export class AdminpanelComponent {
   courses: ICourseItem[] = [];
   isCourseFormOpen: boolean = false;
+  isModalOpen: boolean = false;
   newCourseData = {
     imageURL: '',
     tittle: '',
@@ -52,15 +53,8 @@ export class AdminpanelComponent {
     this.newCourseData.hours = $event.target.value;
   }
 
-  edit(
-    id: number,
-    courseImageURL: string,
-    courseTittle: string,
-    courseDescription: string,
-    courseHours: number,
-    courseUsers: string[]
-  ) {
-    console.log('edit');
+  edit() {
+    this.isModalOpen = !this.isModalOpen;
   }
 
   async createCourse(
@@ -107,4 +101,11 @@ export class AdminpanelComponent {
     const data = await res.json();
     this.courses = data;
   }
+
+  async handleRefresh(){
+    const res = await fetch('http://localhost:3000/courses');
+    const data = await res.json();
+    this.courses = data;
+  }
+
 }

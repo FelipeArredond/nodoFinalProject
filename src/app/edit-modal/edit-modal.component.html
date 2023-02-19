@@ -1,0 +1,16 @@
+<div class="form-container" *ngIf="isOpen">
+    <img src="../../assets/logoppal.jpg" alt="log-icon">
+    <form action="submit" (submit)="editCourse($event)">
+        <label for="id">ID del curso</label>
+        <input type="text" placeholder="example" name="id" id="id" (change)="handleCourseId($event)"/>
+        <label for="image">Añade la URL de la imagen</label>
+        <input type="text" placeholder="example" name="image" id="image" (change)="handleCourseImage($event)"/>
+        <label for="tittle">Escribe un titulo para este curso</label>
+        <input type="text"  placeholder="Example Tittle" name="tittle" id="tittle" (change)="handleCourseTittle($event)"/>
+        <label for="desc">Da una breve descripcion de tu curso</label>
+        <input type="text"  placeholder="Example Tittle" name="desc" id="desc" (change)="handleCourseDesc($event)"/>
+        <label for="hours">Da una cantidad de horas estimadas</label>
+        <input type="text"  placeholder="Example Tittle" name="hours" id (change)="handleCourseHours($event)"/>
+        <button type="submit">Editar curso!</button>
+    </form>
+</div>

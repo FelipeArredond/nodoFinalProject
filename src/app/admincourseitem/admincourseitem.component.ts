@@ -11,13 +11,13 @@ export class AdmincourseitemComponent {
   @Input() courseTittle: string = '';
   @Input() courseDescription: string = '';
   @Input() courseHours: number  = 0;
-  @Output() inscribe: EventEmitter <any> = new EventEmitter();
+  @Output() edit: EventEmitter <any> = new EventEmitter();
   @Output() delete: EventEmitter <any> = new EventEmitter(); 
 
   constructor() {}
 
-  onInscribe(){
-    this.inscribe.emit(null);
+  onEdit(){
+    this.edit.emit(null);
   }
 
   onDelete(){

@@ -4,6 +4,7 @@
     <div>
         <button class="create-course-button" (click)="handleForm()"><span *ngIf="!isCourseFormOpen">Crear curso!</span><span *ngIf="isCourseFormOpen">Cerrar!</span></button>
     </div>
+    <app-edit-modal [isOpen]="isModalOpen" (refresh)="handleRefresh()"/>
     <div class="form-container" *ngIf="isCourseFormOpen">
         <img src="../../assets/logoppal.jpg" alt="log-icon">
         <form action="submit" (submit)="createCourse(newCourseData.imageURL,newCourseData.tittle,newCourseData.desc,newCourseData.hours,[], $event)">
@@ -20,7 +21,7 @@
     </div>
     
     <div class="admin-courses-container">
-        <app-admincourseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (inscribe)="edit(i.id, i.imageURL, i.tittle, i.desc, i.hours, i.users)" (delete)="deleteCourse(i.id)"/>
+        <app-admincourseitem *ngFor="let i of courses" [courseImageURL]="i.imageURL" [courseTittle]="i.tittle" [courseDescription]="i.desc" [courseHours]="i.hours" (edit)="edit()" (delete)="deleteCourse(i.id)"/>
     </div>
 
 </div>
