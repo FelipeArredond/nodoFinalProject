@@ -6,7 +6,7 @@
 
 .testimonials {
     padding: 40px 0;
-    background:#F4F5F7;
+    background:#e7e8eb;
     color: black;
     text-align: center;
 }
@@ -79,8 +79,21 @@ img{
 @media screen and (max-width: 960px) {
     .col {
         flex: 100%;
-        max-width: 80%;
+        max-width: 100%;
+        margin: auto;
     }
+    .testimonial{
+        
+        padding: 0;
+    }
+    p{
+        font-size: 19px;
+        justify-content:start;
+    }
+    .testimonials[_ngcontent-cwo-c22] p[_ngcontent-cwo-c22] {
+        font-size: 19px;
+    }
+    
 }
 
 h2{

@@ -5,6 +5,7 @@
 .cursos {
     text-align: center;
     margin-bottom: 50px;
+    background-color: beige;
 }
 
 .cursos__titulo {
@@ -29,8 +30,8 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    /* grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw); */
     grid-gap: 12px;
     /* margin-left: 100px;
     margin-right: 150px; */
@@ -38,10 +39,10 @@
 
 #text {
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 500;
     transition: 0.3s;
 }
 
@@ -58,7 +59,7 @@ a:link {
     object-fit: cover;
     border-radius: 100px;
     transition: 0.2s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .gallery__img:hover{
