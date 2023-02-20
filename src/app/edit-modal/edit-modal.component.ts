@@ -55,7 +55,7 @@ export class EditModalComponent {
       hours: 10,
       users: [],
     });
-    await fetch(`http://localhost:3000/courses/${this.newCourseData.id}`, {
+    await fetch(`https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses/${this.newCourseData.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

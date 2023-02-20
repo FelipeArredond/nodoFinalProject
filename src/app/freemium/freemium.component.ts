@@ -26,7 +26,7 @@ export class FreemiumComponent {
 
   async validateInscribe(id: number, courseImageURL: string, courseTittle: string, courseDescription: string, courseHours: number, courseUsers: string[]){
     if(this.userDataService.getUserData().isLogged){
-      await fetch(`http://localhost:3000/courses/${id}`,{
+      await fetch(`https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses/${id}`,{
         method: 'PUT',
         headers: {
           "Content-Type": "application/json"
@@ -47,7 +47,7 @@ export class FreemiumComponent {
   }
 
   async ngOnInit(){
-    const res = await fetch("http://localhost:3000/courses");
+    const res = await fetch("https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses");
     const data = await res.json();
     this.courses = data;
   }

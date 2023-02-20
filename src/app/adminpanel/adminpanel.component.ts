@@ -27,7 +27,7 @@ export class AdminpanelComponent {
 
 
   async ngOnInit() {
-    const res = await fetch('http://localhost:3000/courses');
+    const res = await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app//courses');
     const data = await res.json();
     this.courses = data;
   }
@@ -73,7 +73,7 @@ export class AdminpanelComponent {
       hours: 10,
       users: [],
     });
-    await fetch('http://localhost:3000/courses', {
+    await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,12 +83,12 @@ export class AdminpanelComponent {
       .then((res) => res.json())
       .then((res) => console.log(res));
     alert('Se ha creado el curso correctamente')
-    const res = await fetch('http://localhost:3000/courses');
+    const res = await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses');
     const data = await res.json();
     this.courses = data;
   }
   async deleteCourse(id: number) {
-    await fetch(`http://localhost:3000/courses/${id}`, {
+    await fetch(`https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -97,13 +97,13 @@ export class AdminpanelComponent {
       .then((res) => res.json())
       .then((res) => console.log(res));
     alert('Se ha eliminado el curso correctamente')
-    const res = await fetch('http://localhost:3000/courses');
+    const res = await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses');
     const data = await res.json();
     this.courses = data;
   }
 
   async handleRefresh(){
-    const res = await fetch('http://localhost:3000/courses');
+    const res = await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/courses');
     const data = await res.json();
     this.courses = data;
   }

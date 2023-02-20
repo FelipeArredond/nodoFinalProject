@@ -35,7 +35,7 @@ export class LoginComponent {
   async login($event: any) {
     $event.preventDefault();
     let usersList;
-    const res = await fetch('http://localhost:3000/users');
+    const res = await fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/users');
     const data = await res.json();
     console.log(usersList);
     if (data.length > 0) {

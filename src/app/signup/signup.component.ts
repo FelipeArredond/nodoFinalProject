@@ -43,7 +43,7 @@ export class SignupComponent {
       this.confirmPasword != '' &&
       this.userData.password == this.confirmPasword
     ) {
-      fetch('http://localhost:3000/users', {
+      fetch('https://nodo-final-backend-78z1oeqy0-pipechiqui77-gmailcom.vercel.app/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
