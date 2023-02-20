@@ -20,7 +20,7 @@ div img{
 
 div form {
     display: flex;
-    height: 60%;
+    height: 70%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -31,8 +31,9 @@ div form input{
     border-radius: 10px;
     border: none;
     outline: none;
-    height: 20px;
+    height: 60px;
     border: 2px solid #8C30F5;
+    margin-bottom: 5px;
 }
 
 div form input::content{

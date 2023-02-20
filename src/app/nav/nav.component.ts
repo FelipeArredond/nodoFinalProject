@@ -30,7 +30,7 @@ export class NavComponent {
       isLogged: false
     })
     location.reload()
-    this.navigate('')
+    this.navigate('login')
   }
 
 }
